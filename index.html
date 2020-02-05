@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container container__flex">
+            <img src="images/logo_temp_desktop.37bb5de7.svg" alt="" class="header-logo">
+            <div class="header-buttons">
+                <a href="#" class="header-button login-button">Login</a>
+                <a href="#" class="header-button">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+       <div class="main-card">
+           <div class="main-search-card">
+                <h1 class="search-card__title">VIN or Lot # …</h1>
+               <form action="#" class="main-search-form" method="post">
+                   <input type="text" class="search-input" required placeholder="VIN or Lot # ...">
+                   <button type="submit" class="header-button main-button" id="search-by-VIN-or-LOT"></button>
+               </form>
+           </div>
+           <div class="main-search-card">
+               <form action="#" method="post">
+
+                   <h1 class="search-card__title">Search auto</h1>
+                   <div class="main-select-group">
+                       <div class="main-select">
+                           <label for="select-type">Type</label>
+                           <select name="type" id="select-type" class="select select-type" required>
+                               <option value="1">Automobile</option>
+                               <option value="2">Motorcycle</option>
+                               <option value="3">Trailer</option>
+                               <option value="4">Truck</option>
+                               <option value="5">ATV</option>
+                               <option value="6">Industrial equipment</option>
+                               <option value="7">Recreation vehicle</option>
+                               <option value="8">Snowmobile</option>
+                               <option value="9">Boat</option>
+                               <option value="10">Jet ski</option>
+                               <option value="11">Bus,minibus</option>
+                               <option value="12">Other</option>
+                           </select>
+                       </div>
+                       <div class="main-select">
+                           <label for="make">Make</label>
+                           <select name="make" id="make" class="select select-make" required>
+                               <option value="1">value 1</option>
+                               <option value="2">value 2</option>
+                               <option value="3">value 3</option>
+                           </select>
+                       </div>
+                       <div class="main-select">
+                           <label for="model">Model</label>
+                           <select name="model" id="model" class="select select-model" required>
+                               <option value="1">value 1</option>
+                               <option value="2">value 2</option>
+                               <option value="3">value 3</option>
+                           </select>
+                       </div>
+                       <div class="main-select">
+                           <label for="yearSelect">Year</label>
+                           <div class="yearSelect" id="yearSelect">
+                               <select name="yearTo" id="yearFrom" class="select select-year" required>
+                                   <option value="1">From</option>
+                               </select>
+                               <select name="yearTo" id="yearTo" class="select select-year" required>
+                                   <option value="2">To</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="main-select">
+                           <label for="auction">Auction</label>
+                           <div class="select-auctions" id="auction">
+                               <input type="checkbox" name="IAAI-auction" id="IAAI-auction" class="select select-auction" required>
+                               <label for="IAAI-auction">
+                                   <img class="IAAI-auction-img" src="images/ico_iaai.119c1669.svg" alt="IAAI">
+                                   <span>IAAI</span>
+                               </label>
+
+                               <input type="checkbox" name="copart" id="copart" class="select select-auction" required>
+                                   <label for="copart">
+                                       <img class="copart-img" src="images/ico_copart.808e71e5.svg" alt="copart">
+                                       <span>Copart</span>
+                                   </label>
+                           </div>
+                       </div>
+                       <div class="main-select">
+                           <label for="selectDate">Date</label>
+                           <div class="selectDate" id="selectDate">
+                               <select name="dateFrom" id="dateFrom" class="select select-date" required>
+                                   <option value="1">From</option>
+                               </select>
+                               <select name="dateTo" id="dateTo" class="select select-date" required>
+                                   <option value="2">To</option>
+                               </select>
+                           </div>
+                       </div>
+                       <div class="main-select">
+                           <fieldset class="input-radio-group">
+                               <div class="input-radio">
+                                   <input name="region" type="radio" class="USA" id="USA" value="usa" required>
+                                   <label for="USA">USA continental</label>
+                               </div>
+                               <div class="input-radio">
+                                   <input name="region" type="radio" class="Alaska" id="Alaska" value="alaska" required>
+                                   <label for="Alaska">Alaska</label>
+                               </div>
+                               <div class="input-radio">
+                                   <input name="region" type="radio" class="Hawaii" id="Hawaii" value="hawaii" required>
+                                   <label for="Hawaii">Hawaii</label>
+                               </div>
+                               <div class="input-radio">
+                                   <input name="region" type="radio" class="Canada" id="Canada" value="canada" required>
+                                   <label for="Canada">Canada</label>
+                               </div>
+                           </fieldset>
+                       </div>
+                       <div class="main-select">
+                           <label for="select-state">State</label>
+                           <select name="state" id="select-state" class="select select-state" required>
+
+                           </select>
+                       </div>
+                       <button class="header-button form-button">Search</button>
+                   </div>
+               </form>
+           </div>
+       </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <ul class="footer-list">
+                <li class="footer-list-item"><span>IAAI lots:</span> <span class="IAAI-lots">4,450,587</span></li>
+                <li class="footer-list-item"><span>Copart lots:</span> <span class="copart-lots">5,630,368</span>
+                </li>
+            </ul>
+            <div class="footer-change-language">En</div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-text">© 2017-2020 Autoastat. All rights reserved</div>
+            <div class="footer-nav">
+                <a href="#" class="footer-nav-link">Terms & Conditions</a>
+                <a href="#" class="footer-nav-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
